@@ -6,11 +6,11 @@ public class Persona {
 
     //Constructor
     Persona(){
-        System.out.println("\nMi primer POO");
+        System.out.println("\nMi primer POO"); //
     }
 
     //Comportamientos o Metodos
     public void mostrar(){
-        System.out.println(nombre + " " + apellidos + " Buenos Dias");
+        System.out.println(nombre + " " + apellidos + " Buenos Dias"); //
     }
 }
