@@ -16,5 +16,6 @@ public class MainCalcular {
         System.out.println("---------------------------------------------");
 
         datos.mostrarArea();
+
     }
 }
