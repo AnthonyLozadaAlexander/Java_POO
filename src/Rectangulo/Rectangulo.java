@@ -1,3 +1,5 @@
+package Rectangulo;
+
 public class Rectangulo {
     // Atributos
     public float base, altura;

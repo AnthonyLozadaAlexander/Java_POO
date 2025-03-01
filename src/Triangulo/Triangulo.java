@@ -1,10 +1,13 @@
+package Triangulo;
+
 public class Triangulo {
     // Atributos
 
-    // (cuando es public se puede acceder desde la clase principal)
-    /*public float base = 0;
+    /* (cuando es public se puede acceder desde la clase principal)
+    public float base = 0;
     public float altura = 0;
     */
+
     private float base = 0;
     private float altura = 0;
 

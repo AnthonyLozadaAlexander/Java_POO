@@ -1,11 +1,13 @@
+package Triangulo;
+
 import java.util.Scanner;
 
 public class MainCTriangulo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Objeto Triangulo
-        //Triangulo datos = new Triangulo();
+        // Objeto Triangulo.Triangulo
+        //Triangulo.Triangulo datos = new Triangulo.Triangulo();
 
         //datos.base = 10; (asignandole un valor al atributo base)
 

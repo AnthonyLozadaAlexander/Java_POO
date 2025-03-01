@@ -1,3 +1,5 @@
+package Rectangulo;
+
 import java.util.Scanner;
 
 public class MainCalcular {
