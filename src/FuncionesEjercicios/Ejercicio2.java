@@ -37,7 +37,8 @@ public class Ejercicio2 {
         Scanner input = new Scanner(System.in);
         String password = "";
         do {
-            System.out.println("Ingrese una contraseña: ");
+            System.out.println("   Ingrese una contraseña");
+            System.out.print("-> ");
             if(!input.hasNextLine()){
                 String error = input.nextLine();
                 System.out.println("\nError: " + error + " no es una contraseña valida. Intentelo Denuevo\n");
