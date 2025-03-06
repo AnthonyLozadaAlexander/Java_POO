@@ -27,6 +27,7 @@ public class Ejercicio4 {
                 continue;
             }
             else{
+
                 System.out.println("Ingrese el porcentaje del aumento que tendra el trabajador");
                 System.out.print("-> ");
 
@@ -52,7 +53,7 @@ public class Ejercicio4 {
                 }
             }
 
-        }while(salario <= 0 || !input.hasNextFloat());
+        }while(true);
 
         System.out.println("Gracias Por Usar El Programa");
 
