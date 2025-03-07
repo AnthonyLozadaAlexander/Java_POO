@@ -19,6 +19,7 @@ public class Ejercicio5 {
     Scanner input = new Scanner(System.in);
     float n1, n2;
     int opc=0;
+    String respuesta = "";
 
         System.out.println("------------BIENVENIDO-----------");
     do{
@@ -68,6 +69,26 @@ public class Ejercicio5 {
         else{
             System.out.println("\nError: Opcion Incorrecta\n");
         }
+
+        input = new Scanner(System.in); // reset scanner
+        System.out.println("\nDesea Continuar? (s/n)\n");
+        System.out.print("-> ");
+        if(!input.hasNextLine()){
+            int invalidError = input.nextInt();
+            System.out.println("Error: " + invalidError + " Dato Invalido\n");
+            input.next(); // Limpiar buffer
+            continue;
+        }
+        respuesta = input.nextLine();
+
+        if(respuesta.equalsIgnoreCase("s")){
+            continue;
+        }
+        else{
+            System.out.println("\nGracias Por Usar El Programa\n");
+            break;
+        }
+
 
     }while(true);
     }
