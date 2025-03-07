@@ -19,17 +19,18 @@ public class Ejercicio5 {
     Scanner input = new Scanner(System.in);
     float n1, n2;
     int opc=0;
-    String respuesta = "";
+    String respuesta="";
 
         System.out.println("------------BIENVENIDO-----------");
     do{
         n1 = 0; n2=0;
 
-            System.out.println("-----------------------------");
+            System.out.println("\n-----------------------------");
             System.out.print("Ingrese el primer número -> ");
             n1 = input.nextFloat();
             System.out.print("Ingrese el segundo número -> ");
             n2 = input.nextFloat();
+            System.out.println("--------------------------------");
 
         System.out.println("--------------------------------");
         System.out.println("       1. Sumar");
@@ -70,25 +71,31 @@ public class Ejercicio5 {
             System.out.println("\nError: Opcion Incorrecta\n");
         }
 
-        input = new Scanner(System.in); // reset scanner
-        System.out.println("\nDesea Continuar? (s/n)\n");
-        System.out.print("-> ");
-        if(!input.hasNextLine()){
-            System.out.println("Error: Dato Invalido\n");
-            input.next(); // Limpiar buffer
-            continue;
-        }
-        respuesta = input.nextLine();
+            input = new Scanner(System.in); // Limpiar buffer
+            do {
+                System.out.println("\n¿Desea continuar? (s/n)");
+                System.out.print("-> ");
+                respuesta = input.nextLine();
 
-        if(respuesta.equalsIgnoreCase("s")){
-            continue;
-        }
-        else{
-            System.out.println("\nGracias Por Usar El Programa\n");
-            break;
-        }
+                // Verificar si la entrada es un número
+                if(respuesta.matches("\\d+")) {
+                    System.out.println("\nError: Ha ingresado un número. Por favor, ingrese 's' o 'n'.\n");
+                    continue;
+                }
 
+                // Verificar si la respuesta es válida
+                if(respuesta.equalsIgnoreCase("s")) {
+                    break; // Sale del bucle interno para continuar con el programa
+                }
+                else if(respuesta.equalsIgnoreCase("n")) {
+                    System.out.println("\nGracias Por Usar El Programa\n");
+                    return; // Finaliza el programa
+                }
+                else {
+                    System.out.println("\nError: Opción Incorrecta. Debe ingresar 's' o 'n'.\n");
+                }
+            } while(true);
 
-    }while(true);
+        }while(true);
     }
 }
