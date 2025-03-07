@@ -74,8 +74,7 @@ public class Ejercicio5 {
         System.out.println("\nDesea Continuar? (s/n)\n");
         System.out.print("-> ");
         if(!input.hasNextLine()){
-            int invalidError = input.nextInt();
-            System.out.println("Error: " + invalidError + " Dato Invalido\n");
+            System.out.println("Error: Dato Invalido\n");
             input.next(); // Limpiar buffer
             continue;
         }
