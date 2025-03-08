@@ -23,9 +23,8 @@ public class Ejercicio5 {
 
         System.out.println("------------BIENVENIDO-----------");
     do{
-        n1 = 0; n2=0;
 
-            System.out.println("\n-----------------------------");
+            System.out.println("-----------------------------");
             System.out.print("Ingrese el primer número -> ");
             n1 = input.nextFloat();
             System.out.print("Ingrese el segundo número -> ");
@@ -53,9 +52,16 @@ public class Ejercicio5 {
             System.out.println("-----------------------------------\n");
         }
         else if(opc == 2){
-            System.out.println("\n----------------------------------");
-            System.out.println("La resta es: " + calcularResta(n1, n2));
-            System.out.println("-----------------------------------\n");
+
+            if(n1 < n2){
+                System.out.println("\nError: El primer número debe ser mayor al segundo\n");
+                continue;
+            }
+            else {
+                System.out.println("\n----------------------------------");
+                System.out.println("La resta es: " + calcularResta(n1, n2));
+                System.out.println("-----------------------------------\n");
+            }
         }
         else if(opc == 3){
             System.out.println("\n------------------------------------");
@@ -70,7 +76,6 @@ public class Ejercicio5 {
         else{
             System.out.println("\nError: Opcion Incorrecta\n");
         }
-
             input = new Scanner(System.in); // Limpiar buffer
             do {
                 System.out.println("\n¿Desea continuar? (s/n)");
