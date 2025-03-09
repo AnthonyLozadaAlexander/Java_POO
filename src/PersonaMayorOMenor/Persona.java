@@ -20,7 +20,8 @@ public class Persona {
     public void validar(){
         if(age >= 18){
             System.out.println("La persona " + name + " es mayor de edad");
-        }else{
+        }
+        else{
             System.out.println(name + " eres menor de edad");
         }
     }

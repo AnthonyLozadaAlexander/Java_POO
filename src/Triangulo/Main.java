@@ -2,7 +2,7 @@ package Triangulo;
 
 import java.util.Scanner;
 
-public class MainCTriangulo {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

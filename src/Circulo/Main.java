@@ -2,7 +2,7 @@ package Circulo;
 
 import java.util.Scanner;
 
-public class MainCirculo {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         float r;

@@ -2,7 +2,7 @@ package PersonaMayorOMenor;
 
 import java.util.Scanner;
 
-public class MainPersona {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String name;
@@ -12,10 +12,10 @@ public class MainPersona {
         System.out.println("Ingrese la edad de la persona: ");
         age = input.nextInt();
 
-        Persona datos = new Persona(); // Instanciando la clase Persona
+        Persona datos = new Persona(); // Instanciando la clase Persona, Creacion de un objeto de la clase Persona
+
         datos.setNombre(name);
         datos.setEdad(age);
-
         datos.validar();
     }
 }
