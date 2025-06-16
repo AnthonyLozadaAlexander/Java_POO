@@ -20,6 +20,13 @@ public class Operacion {
             return;
         }else{
             JOptionPane.showMessageDialog(null, "El primer numero ingresado es: " + num1 , "Informacion", JOptionPane.INFORMATION_MESSAGE);
+            num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo numero: "));
+            if(num2 < 0){
+                JOptionPane.showMessageDialog(null, "El primer numero ingresado debe ser positivo.", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }else {
+                JOptionPane.showMessageDialog(null, "El primer numero ingresado es: " + num2, "Informacion", JOptionPane.INFORMATION_MESSAGE);
+            }
         }
     }
 
