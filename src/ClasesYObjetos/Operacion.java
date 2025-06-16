@@ -30,4 +30,12 @@ public class Operacion {
         }
     }
 
+    //Metodo para sumar los dos numeros
+    public void sumar(){
+        suma = num1 + num2;
+    }
+
+
+
+
 }
