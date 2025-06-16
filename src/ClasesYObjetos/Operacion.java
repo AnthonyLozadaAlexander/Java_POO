@@ -35,6 +35,24 @@ public class Operacion {
         suma = num1 + num2;
     }
 
+    //Metodo para restar los dos numeros
+    public void restar(){
+        resta = num1 + num2;
+    }
+
+    //Metodo para multiplicar los dos numeros
+    public void multiplicar(){
+        multiplicacion = num1 * num2;
+    }
+
+    //Metodo para dividir los dos numeros
+    public void dividir(){
+        if(num2 == 0){
+            JOptionPane.showMessageDialog(null, "No se puede dividir por cero.", "Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            division = num1 / num2;
+        }
+    }
 
 
 
