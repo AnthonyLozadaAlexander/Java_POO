@@ -3,7 +3,7 @@ package ClasesYObjetos;
 import javax.swing.*;
 
 public class Operacion {
-    // Atributos
+    // Atributos , variables globales
     int num1,
         num2,
         suma,
@@ -13,6 +13,7 @@ public class Operacion {
 
     //Metodos
     //Metodo para pedirle al usuario que ingrese dos numeros
+    /*
     public void leerNumeros(){
         num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer numero: "));
         if(num1 < 0){
@@ -29,24 +30,25 @@ public class Operacion {
             }
         }
     }
+    */
 
     //Metodo para sumar los dos numeros
-    public void sumar(){
+    public void sumar(int num1, int num2){
         suma = num1 + num2;
     }
 
     //Metodo para restar los dos numeros
-    public void restar(){
+    public void restar(int num1, int num2){
         resta = num1 + num2;
     }
 
     //Metodo para multiplicar los dos numeros
-    public void multiplicar(){
+    public void multiplicar(int num1, int num2){
         multiplicacion = num1 * num2;
     }
 
     //Metodo para dividir los dos numeros
-    public void dividir(){
+    public void dividir(int num1, int num2){
         if(num2 == 0){
             JOptionPane.showMessageDialog(null, "No se puede dividir por cero.", "Error", JOptionPane.ERROR_MESSAGE);
         } else {
@@ -54,6 +56,12 @@ public class Operacion {
         }
     }
 
-
-
+    public void mostrarResultados() {
+        String resultados = "Resultados:\n" +
+                            "Suma: " + suma + "\n" +
+                            "Resta: " + resta + "\n" +
+                            "Multiplicacion: " + multiplicacion + "\n" +
+                            "Division: " + (num2 != 0 ? division : "Indefinido (división por cero)");
+        JOptionPane.showMessageDialog(null, resultados, "Resultados de la Operación", JOptionPane.INFORMATION_MESSAGE);
+    }
 }
